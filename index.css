@@ -1,3 +1,7 @@
+body {
+  background-color: #206fbd;
+}
+
 h1 {
   display: flex;
   justify-content: center;
@@ -38,9 +42,16 @@ form {
   flex-wrap: wrap;
 }
 .employees_container {
+  background-image: url("./assets//rain_logo.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
   margin: 20px;
   padding: 20px;
   border: solid black 2px;
   width: 250px;
+}
+
+.p-bold {
+  font-weight: bold;
 }
