@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rain Employees</title>
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body>
+    <div id="add_employees">
+      <div class="add_container">
+        <h1>Add Employee</h1>
+        <button class="closeBtn" onclick="closeBtn()">X</button>
+      </div>
+
+      <form>
+        <label for="Fullname">Fullname:</label>
+        <input
+          id="name"
+          name="Fullname"
+          type="text"
+          placeholder="John/Jane Doe"
+          required
+          class="employ_input"
+        />
+
+        <label for="Rain_Email">Rain Email</label>
+        <input
+          id="email"
+          name="Rain_Email"
+          type="email"
+          placeholder="john/jane.doe@rain.co.za"
+          required
+          class="employ_input"
+        />
+
+        <label for="Password">Password</label>
+        <input
+          id="password"
+          name="Password"
+          type="text"
+          placeholder="123456/password"
+          required
+          class="employ_input"
+        />
+        <button onclick="event.preventDefault(), addEmployee()">
+          Add Employee
+        </button>
+      </form>
+    </div>
+
+    <div id="list">
+      <h1>
+        Rain's Employee List
+        <button class="addbtn" onclick="addBtn()">+</button>
+      </h1>
+      <div class="show_employees"></div>
+    </div>
+
+    <script src="/index.js"></script>
+  </body>
+</html>
