@@ -36,8 +36,7 @@ const showEmployees = (url) => {
       employees.forEach((employee) => {
         show.innerHTML += ` 
         <div class="employees_container"> 
-        <h2> ${employee.Employee_No} </h2>
-        <p class="fullname"> Fullname: <span class="p-bold"> ${employee.Fullname} </span></p>
+        <p class="fullname"> <h2> ${employee.Employee_No} </h2> Fullname: <span class="p-bold"> ${employee.Fullname} </span></p>
         <p class="email" > Email: <span class="p-bold"> ${employee.Rain_Email} </span></p>
         <p class="password"> Password: <span class="p-bold"> ${employee.Password} </span></p> 
         </div>`;
